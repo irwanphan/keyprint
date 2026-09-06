@@ -1,0 +1,65 @@
+{
+  "name": "keyprint",
+  "displayName": "KeyPrint",
+  "description": "A quiet count of what you typed and edited today — no scores, no shame.",
+  "version": "0.1.0",
+  "publisher": "phandarianproject",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#1a1b1e",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irwanphan/keyprint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/irwanphan/keyprint/issues"
+  },
+  "homepage": "https://github.com/irwanphan/keyprint#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "keywords": [
+    "authorship",
+    "keystroke",
+    "ai",
+    "cursor",
+    "stats",
+    "mirror"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "keyprint.showCredits",
+        "title": "KeyPrint: Show Today’s Credits"
+      },
+      {
+        "command": "keyprint.toggle",
+        "title": "KeyPrint: Toggle On/Off"
+      },
+      {
+        "command": "keyprint.resetStats",
+        "title": "KeyPrint: Reset Local Stats"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish:vscode": "vsce publish",
+    "publish:ovsx": "ovsx publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.x",
+    "typescript": "^5.4.0",
+    "@vscode/vsce": "^2.24.0",
+    "ovsx": "^0.9.0"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+out
+*.vsix
+.DS_Store
+.vscode-test
+
+# OpenMemory - IDE/Assistant specific
+.cursor/rules/openmemory.mdc
+openmemory.md
+cursor/
