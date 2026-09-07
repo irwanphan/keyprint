@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "publisher": "phandarianproject",
   "license": "MIT",
+  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#1a1b1e",
     "theme": "dark"
